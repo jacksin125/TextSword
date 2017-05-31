@@ -36,7 +36,7 @@ public class UnlockTownStuff
         sleep(1);
         switch (choice1) {
             case 1: 
-            System.out.println("Innkeeper: Hello, " + character.getName() + ", My name is Adalwine Reslan, though you can call me Adam for short. Thank you for your kind compliments");
+            System.out.println("Innkeeper: Hello, " + character.getName() + ". My name is Adalwine Reslan, though you can call me Adam for short. Thank you for your kind compliments");
             innCost = innCost / 2;
             break;
             case 2:
@@ -54,23 +54,23 @@ public class UnlockTownStuff
         }
         
         sleep(3);
-        System.out.println(" 1. So, how are you today, Good Adam? \n 2. Well, my name is " + character.getName() + ". \n 3. Cool. \n 4. Even your name tells me that you're filth, an innkeeper addled by his own drink. A drunkard with an unlimited supply!");
+        System.out.println(" 1. So, how are you today, Good Sir? \n 2. Well, my name is " + character.getName() + ". \n 3. Cool. \n 4. Even your name tells me that you're filth, an innkeeper addled by his own drink. A drunkard with an unlimited supply!");
         choice2 = a.nextInt();
         sleep(1);
         switch (choice2) {
             case 1:
-            System.out.println("Adam: I am well. Thank you very much for asking! So many people are so rude these days.");
+            System.out.println("Adalwine: I am well. Thank you very much for asking! So many people are so rude these days.");
             innCost = innCost / 2;
             break;
             case 2:
-            System.out.println("Adam: Thank you for letting me know.");
+            System.out.println("Adalwine: Thank you for letting me know.");
             innCost = (int)(innCost * (2/3));
             break;
             case 3:
-            System.out.println("Adam: Well then, I guess I can deal with that.");
+            System.out.println("Adalwine: Well then, I guess I can deal with that.");
             break;
             case 4:
-            System.out.println("Adam: You are incredibly rude, and it is angering me very much. What do you want?");
+            System.out.println("Adalwine: You are incredibly rude, and it is angering me very much. What do you want?");
             innCost = innCost * 3;
             break;
             default: System.out.println(character.getName() + ": Wragarondakmisternomalom. Hobalobabob nomlom tom. \nAdam: So you don't speak English. ¿hablas español? Nederlands? Nihongo?");
@@ -82,23 +82,23 @@ public class UnlockTownStuff
         sleep(1);
         switch (choice3) {
             case 1:
-            System.out.println("Adam: I can absolutely get you a room. And it would only cost " + innCost + " Blik.");
+            System.out.println("Adalwine: I can absolutely get you a room. And it would only cost " + innCost + " Blik.");
             payInnCost();
             break;
             case 2:
-            System.out.println("Adam: Alright, that'll cost " + innCost + " Blik.");
+            System.out.println("Adalwine: Alright, that'll cost " + innCost + " Blik.");
             payInnCost();
             break;
             case 3:
-            System.out.println("Adam: Sure, for " + innCost + " Blik.");
+            System.out.println("Adalwine: Sure, for " + innCost + " Blik.");
             payInnCost();
             break;
             case 4:
-            System.out.println("Adam: Yeah, sure, if you can pay " + innCost + " Blik. If not, then stop acting so high and mighty");
+            System.out.println("Adalwine: Yeah, sure, if you can pay " + innCost + " Blik. If not, then stop acting so high and mighty");
             payInnCost();
             break;
             case 5:
-            System.out.println("Adam: Alright, bye.");
+            System.out.println("Adalwine: Alright, bye.");
             sleep(1);
             System.out.println("Being as you didn't get a room, there is no reason for you to be at the inn. So you leave.");
             break;
@@ -118,11 +118,11 @@ public class UnlockTownStuff
             if (character.money >= innCost){
                 character.money = character.money - innCost;
                 innUnlocked = true;
-                System.out.println("Adam: Thank you for choosing the Swordman's Rest Inn! The rooms are up the stairs, and yours is fourth on the left");
+                System.out.println("Adalwine: Thank you for choosing the Swordman's Rest Inn! The rooms are up the stairs, and yours is fourth on the left");
                 System.out.println("Congratulations! You bought a room! You can now actually save your game, as well as heal without buying potions (by taking a nap)");
             } else{
                 System.out.println(character.getName() + ": I don't have enough money.");
-                System.out.println("Adam: Then come back when you have enough.");
+                System.out.println("Adalwine: Then come back when you have enough.");
                 innUnlocked = false;
             }
             break;
