@@ -115,8 +115,8 @@ public class UnlockTownStuff
         
         switch (pay){
             case 1:
-            if (character.money >= innCost){
-                character.money = character.money - innCost;
+            if (Character.getMoney >= innCost){
+                Character.remMoney(innCost);
                 innUnlocked = true;
                 System.out.println("Adalwine: Thank you for choosing the Swordman's Rest Inn! The rooms are up the stairs, and yours is fourth on the left");
                 System.out.println("Congratulations! You bought a room! You can now actually save your game, as well as heal without buying potions (by taking a nap)");

@@ -7,9 +7,11 @@
  */
 public class Character
 {
-    private String name;
-    private int level;
-    int money = 500;
+    private static String name;
+    private static int level = 1;
+    private static int money = 500;
+    private static int experience = 0;
+    private static int health;
     Start start;
     
     public Character(Start s)
@@ -27,10 +29,9 @@ public class Character
         name = newName;
     }
     
-    public void Stats()
+    public void Getstats()
     {
-        level = 1;
-        int experience = 0;
+        
     }
     
     public int getLevel()
@@ -42,5 +43,16 @@ public class Character
         return name;
     }
     
-    
+    public void addMoney(int a)
+    {
+        money += a;
+    }
+    public void remMoney(int a)
+    {
+        money -= a;
+    }
+    public int getMoney()
+    {
+        return money;
+    }
 }

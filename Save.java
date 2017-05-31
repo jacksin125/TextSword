@@ -9,26 +9,24 @@ import java.util.Scanner;
 public class Save
 {
     private UnlockTownStuff unlock;
-    private TownStuff town;
     private Character character;
     
     private Scanner a = new Scanner(System.in);
-    int slot;
-    public Save(UnlockTownStuff u, TownStuff t, Character c)
+    static int slot;
+    public Save(UnlockTownStuff u, Character c)
     {
         unlock = u;
-        town = t;
         character = c;
     }
-    public void saveGame()
+    public static void saveGame()
     {
         System.out.println("What slot would you like to save this game to? You can choose slots 1-10");
-        slot = a.nextInt();
+        slot = Town.a.nextInt();
         try {
             if (Files.exists(FileSystems.getDefault().getPath("TextSword\\Saves\\Save "+slot+".txt")) != true){
                 Files.createDirectories(FileSystems.getDefault().getPath("Saves"));
                 Files.createFile(FileSystems.getDefault().getPath("Saves\\Save "+slot+".txt"));
-                Files.write(FileSystems.getDefault().getPath("Saves\\Save "+slot+".txt"), character.getStart().placeHolder.getBytes(), StandardOpenOption.CREATE); 
+                //Files.write(FileSystems.getDefault().getPath("Saves\\Save "+slot+".txt"), Character.getStart().placeHolder.getBytes(), StandardOpenOption.CREATE); 
             }
         } catch(java.io.IOException e){
             
@@ -56,7 +54,7 @@ public class Save
     }
     
     private void saveCharacter(){
-        String money = Integer.toString(character.money);
+        String money = Integer.toString(Character.getMoney());
         
         try {
             Files.write(FileSystems.getDefault().getPath("TextSword\\Saves\\Save "+slot+".txt"), money.getBytes(), StandardOpenOption.APPEND);
