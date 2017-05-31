@@ -76,7 +76,6 @@ public class Start
     private void mainScene(Character c)
     {
         UnlockTownStuff unlock = new UnlockTownStuff(c);
-        TownStuff town = new TownStuff(c, unlock);
         int go;
         System.out.println("You are in the town. Where would you like to go? You can go to:");
         System.out.println(" 1. The Inn \n 2. The General Store \n 3. The Blacksmith \n 4. The Arena \n 5. Leave Town \nPlease give the number next to what you want to do");
@@ -88,7 +87,7 @@ public class Start
             if (UnlockTownStuff.getInnUnlocked() == false){
                     unlock.unlockInn();
                 } else {
-                    town.innScene();
+                    
                 }
             break;
             case 2:

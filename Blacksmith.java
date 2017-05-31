@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Blacksmith extends TownStuff
+public abstract class Blacksmith implements Town
 {
     
 }

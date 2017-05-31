@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=u\ t\ c
-comment0.target=Save(UnlockTownStuff,\ TownStuff,\ Character)
+comment0.params=u\ c
+comment0.target=Save(UnlockTownStuff,\ Character)
 comment1.params=
 comment1.target=void\ saveGame()
 comment2.params=
