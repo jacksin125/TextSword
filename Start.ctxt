@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=Args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=void\ exitGame()
+comment2.params=x
+comment2.target=void\ sleep(int)
+comment3.params=
+comment3.target=void\ initScanner()
+comment4.params=
+comment4.target=java.util.Scanner\ getScanner()
+comment5.params=
+comment5.target=boolean\ getGone()
+comment6.params=c
+comment6.target=void\ mainScene(Character)
+numComments=7

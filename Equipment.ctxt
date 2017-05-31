@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=isWeapon\ attack\ defense
+comment0.target=Equipment(boolean,\ int,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getWeapon()
+numComments=2

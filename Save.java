@@ -26,9 +26,7 @@ public class Save
         slot = a.nextInt();
         try {
             if (Files.exists(FileSystems.getDefault().getPath("TextSword\\Saves\\Save "+slot+".txt")) != true){
-                Files.createDirectories(FileSystems.getDefault().getPath("Saves"));
-                Files.createFile(FileSystems.getDefault().getPath("Saves\\Save "+slot+".txt"));
-                Files.write(FileSystems.getDefault().getPath("Saves\\Save "+slot+".txt"), character.getStart().placeHolder.getBytes(), StandardOpenOption.CREATE); 
+                Files.write(FileSystems.getDefault().getPath("TextSword\\Saves\\Save "+slot+".txt"), character.getStart().placeHolder.getBytes(), StandardOpenOption.CREATE); 
             }
         } catch(java.io.IOException e){
             

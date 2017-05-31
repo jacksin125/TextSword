@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=c
+comment0.target=UnlockTownStuff(Character)
+comment1.params=
+comment1.target=void\ unlockInn()
+comment2.params=
+comment2.target=void\ payInnCost()
+comment3.params=
+comment3.target=boolean\ getInnUnlocked()
+comment4.params=
+comment4.target=void\ unlockStore()
+comment5.params=
+comment5.target=boolean\ getStoreUnlocked()
+comment6.params=x
+comment6.target=void\ sleep(int)
+numComments=7
