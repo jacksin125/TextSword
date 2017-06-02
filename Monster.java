@@ -1,22 +1,21 @@
 
 /**
- * Equipment.java
- * Write a description of class Equiptment here.
+ * Write a description of class Monster here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public abstract class Equipment
+public class Monster
 {
-    private boolean isWeapon;
-    private int attack;
-    private int defense;
+    int attack;
+    int defense;
     private String name;
-    public Equipment(String n, int a, int d)
+    
+    public Monster(String n, int a, int d)
     {
-       this.attack = a;
-       this.defense = d;
-       name = n;
+        attack = a;
+        defense = d;
+        name = n;
     }
     
     public String getName()
@@ -33,5 +32,4 @@ public abstract class Equipment
     {
         return defense;
     }
-    
 }

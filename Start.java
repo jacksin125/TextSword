@@ -7,30 +7,29 @@
  */
 import java.nio.file.*;
 import java.util.Scanner;
+import java.util.*;
 public class Start
 {
-    private Scanner input;
-    private Start startGame;
-    boolean gone = false;
+    public static final Scanner a = new Scanner(System.in);
+    static boolean gone = false;
     String placeHolder = "Hiiiii. My name is Bob";
+    private static ArrayList<Monster> monsters = new ArrayList<Monster>();
+    private static ArrayList<Equipment> equipment = new ArrayList<Equipment>();
 
     public static void main(String[] Args)
     {
-        Start begin = new Start();
-        Character c = new Character(begin);
-        begin.initScanner();
         
         System.out.println("Choose the slot you would like to load");
-        int slot = begin.getScanner().nextInt();
-        String debug = begin.getScanner().nextLine();
+        int slot = Start.a.nextInt();
+        String debug = Start.a.nextLine();
         
          try {
             if (Files.exists(FileSystems.getDefault().getPath("TextSword\\Saves\\Save "+slot+".txt")) != true){
                 System.out.println("What is your name?");
                 sleep(1);
-                String name = begin.getScanner().nextLine();
+                String name = Start.a.nextLine();
                 
-                c.setName(name);
+                Character.setName(name);
             } else {
                 Files.readAllLines(FileSystems.getDefault().getPath("TextSword\\Saves\\Save "+slot+".txt"));
             }
@@ -38,14 +37,15 @@ public class Start
             
         }
         
-        
+        loadMonsters();
+        loadEquipment();
 
-        while (begin.getGone() == false){
-            begin.mainScene(c);
+        while (gone == false){
+            mainScene();
         }
     }
     
-    public void exitGame() {
+    public static void exitGame() {
         System.out.println("Thank you for playing. Goodbye!");
         System.exit(0);
     }
@@ -58,29 +58,19 @@ public class Start
         }
     }
     
-    public void initScanner()
-    {
-        input = new Scanner(System.in);
-    }
-    
-    public Scanner getScanner()
-    {
-        return input;
-    }
-    
     public boolean getGone()
     {
         return gone;
     }
     
-    private void mainScene(Character c)
+    private static void mainScene()
     {
-        UnlockTownStuff unlock = new UnlockTownStuff(c);
+        UnlockTownStuff unlock = new UnlockTownStuff();
         int go;
         System.out.println("You are in the town. Where would you like to go? You can go to:");
         System.out.println(" 1. The Inn \n 2. The General Store \n 3. The Blacksmith \n 4. The Arena \n 5. Leave Town \nPlease give the number next to what you want to do");
         System.out.println("You can also: \n 6. View your character information \n 7. Check your inventory \n 8. Leave the game");
-        go = input.nextInt();
+        go = Start.a.nextInt();
         
         switch (go) {
             case 1:    
@@ -97,5 +87,39 @@ public class Start
             exitGame();
             break;
         }
+    }
+    
+    public static void loadMonsters() 
+    {
+        
+        monsters.add(new Monster("Rabbit", 1, 0));
+        monsters.add(new Monster("Pig", 1, 1));
+        monsters.add(new Monster("Deer", 2, 1));
+    }
+    
+    public static Monster getMonster(int num)
+    {
+        return monsters.get(num);
+    }
+    
+    public static int monstersLength()
+    {
+        return monsters.size();
+    }
+    
+    public static Equipment getEquipment(int num)
+    {
+        return equipment.get(num);
+    }
+    
+    public static void loadEquipment() 
+    {
+        
+        equipment.add(new Weapon ("Wooden Dagger", 1, 0));
+        equipment.add(new Weapon ("Worn Dagger", 2, 0));
+        equipment.add(new Weapon ("Bronze Dagger", 3, 0));
+        equipment.add(new Weapon ("Rags", 0, 1));
+        equipment.add(new Weapon ("Pauper's Clothes", 0, 2));
+        equipment.add(new Weapon ("Peasant's Clothes", 0, 3));
     }
 }

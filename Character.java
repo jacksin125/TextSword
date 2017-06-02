@@ -14,17 +14,13 @@ public class Character
     private static int health;
     Start start;
     
-    public Character(Start s)
+    public Character()
     {
-        start = s;
+        
     }
     
-    public Start getStart()
-    {
-        return start;
-    }
     
-    public void setName(String newName)
+    public static void setName(String newName)
     {
         name = newName;
     }
@@ -43,15 +39,15 @@ public class Character
         return name;
     }
     
-    public void addMoney(int a)
+    public static void addMoney(int a)
     {
         money += a;
     }
-    public void remMoney(int a)
+    public static void remMoney(int a)
     {
         money -= a;
     }
-    public int getMoney()
+    public static int getMoney()
     {
         return money;
     }

@@ -1,13 +1,13 @@
 
 /**
- * Write a description of class Weapon here.
+ * Write a description of class Armour here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Weapon extends Equipment
+public class Armor extends Equipment
 {
-    public Weapon(String name, int attack, int defense)
+   public Armor(String name, int attack, int defense)
     {
        super(name, attack, defense);
     }
