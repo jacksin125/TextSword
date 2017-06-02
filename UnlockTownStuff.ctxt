@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=c
-comment0.target=UnlockTownStuff(Character)
+comment0.params=
+comment0.target=UnlockTownStuff()
 comment1.params=
 comment1.target=void\ unlockInn()
 comment2.params=

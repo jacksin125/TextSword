@@ -21,12 +21,11 @@ public class Save
     public static void saveGame()
     {
         System.out.println("What slot would you like to save this game to? You can choose slots 1-10");
-        slot = Town.a.nextInt();
+        slot = Start.a.nextInt();
         try {
             if (Files.exists(FileSystems.getDefault().getPath("TextSword\\Saves\\Save "+slot+".txt")) != true){
                 Files.createDirectories(FileSystems.getDefault().getPath("Saves"));
                 Files.createFile(FileSystems.getDefault().getPath("Saves\\Save "+slot+".txt"));
-                //Files.write(FileSystems.getDefault().getPath("Saves\\Save "+slot+".txt"), Character.getStart().placeHolder.getBytes(), StandardOpenOption.CREATE); 
             }
         } catch(java.io.IOException e){
             
@@ -55,10 +54,11 @@ public class Save
     
     private void saveCharacter(){
         String money = Integer.toString(Character.getMoney());
+        //String name = Character.getName();
         
         try {
             Files.write(FileSystems.getDefault().getPath("TextSword\\Saves\\Save "+slot+".txt"), money.getBytes(), StandardOpenOption.APPEND);
-            
+            //Files.write(FileSystems.getDefault().getPath("Saves\\Save "+slot+".txt"), name.getBytes(), StandardOpenOption.APPEND);
         } catch(java.io.IOException e){
             
         }

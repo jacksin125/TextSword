@@ -18,9 +18,9 @@ public class UnlockTownStuff
     private Character character;
     
     
-    public UnlockTownStuff(Character c)
+    public UnlockTownStuff()
     {
-        character = c;
+        
     }
     
     public void unlockInn () {
@@ -115,7 +115,7 @@ public class UnlockTownStuff
         
         switch (pay){
             case 1:
-            if (Character.getMoney >= innCost){
+            if (Character.getMoney() >= innCost){
                 Character.remMoney(innCost);
                 innUnlocked = true;
                 System.out.println("Adalwine: Thank you for choosing the Swordman's Rest Inn! The rooms are up the stairs, and yours is fourth on the left");
@@ -146,7 +146,7 @@ public class UnlockTownStuff
         int choice3;
         int storeCost = 200;
         
-        if (character.getLevel() >= 5 && character.money > 100) {
+        if (character.getLevel() >= 5 && Character.getMoney() > 100) {
             System.out.println ("Shopkeeper: Hello, and welcome to Belethor's General Goods Store! How can I help you?");
             sleep(2);
             System.out.println(" 1. Hello, good sir. My name is " + character.getName() + ". Can I assume that yours is Belethor? \n 2. Hi, my name's " + character.getName() + ". I'm guessing yours isn't Belethor \n 3. Hi Belethor. I'm " + character.getName() + ". \n 4. Good god, your name is horrible. It's not even worth spitting upon. Though you might be, lowly peasant. If I must, my name is " + character.getName());

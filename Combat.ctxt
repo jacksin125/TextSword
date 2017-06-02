@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=mA\ mD
+comment0.target=Combat(int,\ int)
+comment1.params=
+comment1.target=void\ begin()
+comment2.params=
+comment2.target=int\ playerRound()
+comment3.params=
+comment3.target=int\ monRound()
+numComments=4
