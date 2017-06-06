@@ -7,13 +7,10 @@
  */
 public class Combat
 {
-    private int monAttack;
-    private int monDefense;
     
     public Combat (int mA, int mD)
     {
-        monAttack = mA;
-        monDefense = mD;
+        
         
         begin();
     }
