@@ -7,10 +7,14 @@
  */
 public class Combat
 {
+    Monster enemy;
+    int pHealth;
+    int mHealth;
     
-    public Combat (int mA, int mD)
+    public Combat ()
     {
-        
+        pHealth = Character.getHealth();
+        mHealth = 5;
         
         begin();
     }
@@ -18,14 +22,25 @@ public class Combat
     public void begin()
     {
         int monNum = (int)(Math.random() * Start.monstersLength());
-        Monster enemy = Start.getMonster(monNum);
+        enemy = Start.getMonster(monNum);
         
         int turn = (int)(Math.random() + 0.5);
+        
+        while(mHealth > 0 && pHealth > 0)
+        {
+            if(turn == 0)
+            {
+                playerRound();
+                
+            }
+        }
         
     }
     
     public int playerRound()
     {
+        
+        
         return 1;
     }
     

@@ -12,6 +12,9 @@ public class Character
     private static int money = 500;
     private static int experience = 0;
     private static int health;
+    private static Weapon weapon = new Weapon("Nothing", 0, 0);
+    private static Armor armor = new Armor("Nothing", 0, 0);
+    
     Start start;
     
     public Character()
@@ -19,6 +22,34 @@ public class Character
         
     }
     
+    public static int getAttack()
+    {
+        return armor.getAttack() + weapon.getAttack();
+    }
+    public static int getDefense()
+    {
+        return armor.getDefense() + weapon.getDefense();
+    }
+    
+    public static void setArmor(Armor a)
+    {
+        armor = a;
+    }
+    
+    public static Armor getArmor()
+    {
+        return armor;
+    }
+    
+    public static void setWeapon(Weapon w)
+    {
+        weapon = w;
+    }
+    
+    public static Weapon getWeapon()
+    {
+        return weapon;
+    }
     
     public static void setName(String newName)
     {
