@@ -112,6 +112,11 @@ public class Start
         return equipment.get(num);
     }
     
+    public static int equipmentLength()
+    {
+        return equipment.size();
+    }
+    
     public static void loadEquipment() 
     {
         equipment.add(new Weapon ("Nothing", 0, 0));
