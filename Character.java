@@ -38,6 +38,10 @@ public class Character
     {
         return name;
     }
+    public static int getHealth()
+    {
+        return level;
+    }
     
     public static void addMoney(int a)
     {
