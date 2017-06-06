@@ -119,12 +119,12 @@ public class Start
     
     public static void loadEquipment() 
     {
-        equipment.add(new Weapon ("Nothing", 0, 0));
+        equipment.add(new Weapon ("No Weapon", 0, 0));
+        equipment.add(new Armor ("No Armor", 0, 0));
         equipment.add(new Weapon ("Wooden Dagger", 1, 0));
         equipment.add(new Weapon ("Worn Dagger", 2, 0));
         equipment.add(new Weapon ("Bronze Dagger", 3, 0));
         equipment.add(new Weapon ("Rags", 0, 1));
-        equipment.add(new Armor ("Nothing", 0, 0));
         equipment.add(new Armor ("Pauper's Clothes", 0, 2));
         equipment.add(new Armor ("Peasant's Clothes", 0, 3));
         
