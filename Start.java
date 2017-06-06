@@ -119,7 +119,7 @@ public class Start
         equipment.add(new Weapon ("Worn Dagger", 2, 0));
         equipment.add(new Weapon ("Bronze Dagger", 3, 0));
         equipment.add(new Weapon ("Rags", 0, 1));
-        equipment.add(new Weapon ("Pauper's Clothes", 0, 2));
-        equipment.add(new Weapon ("Peasant's Clothes", 0, 3));
+        equipment.add(new Armor ("Pauper's Clothes", 0, 2));
+        equipment.add(new Armor ("Peasant's Clothes", 0, 3));
     }
 }
