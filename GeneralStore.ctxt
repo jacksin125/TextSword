@@ -1,2 +1,8 @@
 #BlueJ class context
-numComments=0
+comment0.params=
+comment0.target=GeneralStore()
+comment1.params=
+comment1.target=void\ ask()
+comment2.params=choice
+comment2.target=void\ function(int)
+numComments=3

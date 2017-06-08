@@ -56,16 +56,16 @@ public class Character
         name = newName;
     }
     
-    public void Getstats()
+    public static void Getstats()
     {
         
     }
     
-    public int getLevel()
+    public static int getLevel()
     {
         return level;
     }
-    public String getName()
+    public static String getName()
     {
         return name;
     }
