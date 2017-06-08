@@ -10,6 +10,7 @@ public class Combat
     Monster enemy;
     int pHealth;
     int mHealth;
+    int damage;
     
     public Combat ()
     {
@@ -39,13 +40,23 @@ public class Combat
     
     public int playerRound()
     {
+        int bonus = (int)(Math.random() * 2 + 1);
+        if ((Character.getAttack() + bonus) - enemy.getDefense() < 0)
+            damage = 0;
+        else
+            damage = (Character.getAttack() + bonus) - enemy.getDefense();
         
-        
-        return 1;
+        return damage;
     }
     
     public int monRound()
     {
-        return 1;
+        int bonus = (int)(Math.random() * 2 + 1);
+        if ((enemy.getAttack() + bonus) - Character.getDefense() < 0)
+            damage = 0;
+        else
+            damage = (enemy.getAttack() + bonus) - Character.getDefense();
+        
+        return damage;
     }
 }
