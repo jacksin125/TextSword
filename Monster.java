@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Monster here.
+ * Monster.java
+ * This class represents a monster in the game.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Orion Duffy and Emily Doran
+ * @version 6-12-17
  */
 public class Monster
 {

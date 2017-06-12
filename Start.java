@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Start here.
+ * Start.java
+ * This class asks the user where they would like to go when they first start the game.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Orion Duffy and Emily Doran
+ * @version 6-12-17
  */
 import java.nio.file.*;
 import java.util.Scanner;
@@ -129,4 +130,4 @@ public class Start
         equipment.add(new Armor ("Peasant's Clothes", 0, 3));
         
     }
-}
+}//end class Start

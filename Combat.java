@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Combat here.
+ * Combat.java
+ * This class represents the fighting between the player and the enemy.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Orion Duffy and Emily Doran
+ * @version 6-12-17
  */
 public class Combat
 {
@@ -59,4 +60,4 @@ public class Combat
         
         return damage;
     }
-}
+}//end class Combat

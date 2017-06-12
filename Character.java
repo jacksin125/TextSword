@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Character here.
+ * Character.java
+ * This class contains all of the different information about the character.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Orion Duffy and Emily Doran
+ * @version 6-12-17
  */
 public class Character
 {
@@ -86,4 +87,4 @@ public class Character
     {
         return money;
     }
-}
+}//end class Character

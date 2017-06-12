@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class GeneralStore here.
+ * GeneralStore.java
+ * This class represents the general store in the game.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Orion Duffy and Emily Doran
+ * @version 6-12-17
  */
 public class GeneralStore implements Town
 {
@@ -27,4 +28,4 @@ public class GeneralStore implements Town
        int answer = Start.a.nextInt();
        String debug = Start.a.nextLine();
    }
-}
+}//end class GeneralStore

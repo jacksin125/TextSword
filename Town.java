@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class TownStuff here.
+ * Town.java
+ * This is the interface for all of the different locations in town.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Orion Duffy and Emily Doran 
+ * @version 6-12-17
  */
 import java.util.Scanner;
 public interface Town
@@ -14,4 +15,4 @@ public interface Town
     
     void function(int choice);
     
-}
+}//end interface Town

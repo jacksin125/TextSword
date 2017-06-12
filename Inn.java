@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class innScene here.
+ * Inn.java
+ * This class represents the Inn in the town
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Orion Duffy and Emily Doran
+ * @version 6-12-17
  */
 public class Inn implements Town
 {
@@ -25,4 +26,4 @@ public class Inn implements Town
             Save.saveGame();
         }
     }
-}
+}//end class Inn

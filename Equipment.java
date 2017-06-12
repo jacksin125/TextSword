@@ -1,10 +1,10 @@
 
 /**
  * Equipment.java
- * Write a description of class Equiptment here.
+ * This class contains the basic information about the 2 kinds of equipment
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Orion Duffy and Emily Doran 
+ * @version 6-12-17
  */
 public abstract class Equipment
 {
@@ -34,4 +34,4 @@ public abstract class Equipment
         return defense;
     }
     
-}
+}//end class Equipment

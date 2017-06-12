@@ -1,10 +1,14 @@
 #BlueJ class context
 comment0.params=u\ c
 comment0.target=Save(UnlockTownStuff,\ Character)
+comment0.text=\r\n\ Constructs\ a\ new\ Save\ object\r\n
 comment1.params=
 comment1.target=void\ saveGame()
+comment1.text=\ Asks\ the\ user\ where\ they\ would\ like\ to\ save\ the\ game,\ and\ if\ it\ exists\ saves\ the\ game.\r\n\ Precondition\:\ The\ game\ has\ not\ yet\ been\ saved\ to\ a\ slot.\r\n\ Postcondition\:\ Sets\ the\ slot\ that\ the\ game\ will\ be\ saved\ to\ and\ saves\ it\ to\ that\ slot.\r\n
 comment2.params=
 comment2.target=void\ saveUnlocked()
+comment2.text=\ Checks\ to\ see\ if\ the\ inn\ is\ unlocked\ and\ saves\ it\ if\ it\ is\ unlocked.\r\n\ Precondition\:\ The\ inn\ has\ not\ been\ saved\r\n\ Postcondition\:\ If\ the\ inn\ has\ been\ unlocked,\ it\ gets\ saved.\r\n
 comment3.params=
 comment3.target=void\ saveCharacter()
+comment3.text=\ Saves\ the\ character's\ money\r\n\ Precondition\:\ The\ money\ that\ the\ character\ has\ earned\ has\ not\ been\ saved\r\n\ Postcondition\:\ The\ player's\ money\ is\ saved.\ \r\n
 numComments=4

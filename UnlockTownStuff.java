@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class UnlockTownStuff here.
+ * UnlockTownStuff.java
+ * This class unlocks different parts of the town once the player gains access.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Orion Duffy and Emily Doran
+ * @version 6-12-17
  */
 //make blacksmith Thorald Stronghammer
 import java.util.Scanner;
@@ -221,4 +222,4 @@ public class UnlockTownStuff
             Thread.currentThread().interrupt();
         }
     }
-}
+}//end class UnlockTownStuff
