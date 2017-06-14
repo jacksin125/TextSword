@@ -51,7 +51,7 @@ public class Start
         System.exit(0);
     }
     
-    private static void sleep(int x) {
+    public static void sleep(int x) {
         try {
             Thread.sleep(x * 1000);
         } catch(InterruptedException ex) {
@@ -83,6 +83,8 @@ public class Start
             break;
             case 2:
             
+            break;
+            case 5:
             break;
             case 8:
             exitGame();

@@ -5,4 +5,6 @@ comment1.params=
 comment1.target=void\ ask()
 comment2.params=choice
 comment2.target=void\ function(int)
-numComments=3
+comment3.params=choice
+comment3.target=void\ buyItem(int)
+numComments=4

@@ -12,7 +12,7 @@ public class Character
     private static int level = 1;
     private static int money = 500;
     private static int experience = 0;
-    private static int health;
+    private static int health = 10;
     private static Weapon weapon = new Weapon("Nothing", 0, 0);
     private static Armor armor = new Armor("Nothing", 0, 0);
     
@@ -72,7 +72,7 @@ public class Character
     }
     public static int getHealth()
     {
-        return level;
+        return health;
     }
     
     public static void addMoney(int a)

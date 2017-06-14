@@ -16,7 +16,7 @@ must fight enemies outside of town.
 
 VERSION or DATE: 6-14-17
 
-HOW TO START THIS PROJECT: Click on the main method on the Start class.
+HOW TO START THIS PROJECT: 
 
 AUTHORS: Orion Duffy and Emily Doran
 
